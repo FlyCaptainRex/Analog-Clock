@@ -32,7 +32,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: silver;
+  background-image: linear-gradient(to bottom left,crimson,orange,coral,red);
 }
 .clock {
   /* Additional styling for the clock container */
@@ -42,29 +42,30 @@ body {
   border-radius: 50%; /* Sets the border radius */
   position: relative; /* Sets the position to relative */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url(images/47-471753_clock-no-hands-png-clipart-transparent-roman-clock.png);
-  background-color: silver;
+  justify-content: center; /* Centers the content */
+  align-items: center; /* Centers the items */
+  background: url(images/romanClock.png); 
+  /* Sets an image as the background */
+  background-color: silver; /* Sets the background-color to silver */
 }
 /* Center the clock */
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
+  height: 100vh; /* Sets the height to 100vh*/
+  margin: 0; /* Sets the margin to 0 */
 }
 .clock {
   /* Additional styling for the clock container */
-  width: 450px; /* Set the desired width */
-  height: 450px; /* Set the desired height */
-  border: 0px solid #000;
-  border-radius: 50%;
+  width: 420px; /* Set the desired width */
+  height: 420px; /* Set the desired height */
+  border: 0px solid #000; /* Sets the border to 0px */
+  border-radius: 50%; /* Sets the border radius to 50%  */
   position: relative;
-  background: url(images/47-471753_clock-no-hands-png-clipart-transparent-roman-clock-removebg-preview.png)
+  background: url(images/romanClock.png)
     no-repeat center center;
-  background-size: cover;
+    background-size: cover;
 }
 /* Styles for clock hands */
 .hand {
@@ -74,65 +75,24 @@ body {
   left: 50%;
   bottom: 50%;
 }
+/* Styles the hour-hand */
 .hour-hand {
   width: 5px;
   height: 100px;
   z-index: 3;
-  background-color: darkgray;
+  background-color: black;
 }
+/* Styles the minute-hand */
 .min-hand {
   width: 3.5px;
   height: 150px;
   z-index: 2;
-  background-color: grey;
+  background-color:black;
 }
+/* Styles the second-hand */
 .second-hand {
   width: 2.5px;
   height: 180px;
   z-index: 1;
-  background-color: gray;
-}
-/* Adjusted positioning for markings */
-.marking {
-  width: 2px;
-  height: 10px;
-  top: 5%;
-  left: 50%;
-  transform-origin: 50% 100%;
-}
-.marking:nth-child(1) {
-  transform: rotate(30deg);
-}
-.marking:nth-child(2) {
-  transform: rotate(60deg);
-}
-.marking:nth-child(3) {
-  transform: rotate(90deg);
-}
-.marking:nth-child(4) {
-  transform: rotate(120deg);
-}
-.marking:nth-child(5) {
-  transform: rotate(150deg);
-}
-.marking:nth-child(6) {
-  transform: rotate(180deg);
-}
-.marking:nth-child(7) {
-  transform: rotate(210deg);
-}
-.marking:nth-child(8) {
-  transform: rotate(240deg);
-}
-.marking:nth-child(9) {
-  transform: rotate(270deg);
-}
-.marking:nth-child(10) {
-  transform: rotate(300deg);
-}
-.marking:nth-child(11) {
-  transform: rotate(330deg);
-}
-.marking:nth-child(12) {
-  transform: rotate(0deg);
+  background-color: crimson;
 }
